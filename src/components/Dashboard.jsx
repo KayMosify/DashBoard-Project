@@ -283,7 +283,7 @@ const handleCloseEdit = () => {
         />
          
         {/* Product Details Modal  */}
-        {selectedProduct && <ProductDetails product={selectedProduct} onClose={() => setSelectedProduct(null)} />}
+        {selectedProduct && !isDeleteModalOpen && <ProductDetails product={selectedProduct} onClose={() => setSelectedProduct(null)} />}
 
         {isDeleteModalOpen && <div className="modal-overlay"></div>}
         <DeleteModal
