@@ -1,0 +1,92 @@
+.modalContent {
+  background-color: black;
+  /* background-color: #191A19; */
+  border: 1px solid rgb(39, 39, 42);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100; /* Ensure it's above the overlay */
+}
+
+
+.header {
+  margin-bottom: 16px; 
+}
+
+.title {
+  color: rgb(239, 68, 68);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1.5rem 2.5rem;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.description {
+  color: white;
+  margin-top: 8px;
+  padding: 2rem 3.5rem 0 ;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 3.5rem;
+}
+
+.detailRow {
+  display: flex;
+}
+
+.detailLabel {
+  width: 128px;
+  color: rgb(113, 113, 122);
+}
+
+.detailValue {
+  color: rgb(212, 212, 216);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+  padding-bottom: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.cancelButton {
+  background-color: transparent;
+  border: 1px solid rgb(63, 63, 70);
+  color: rgb(212, 212, 216);
+  padding: 14px 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancelButton:hover {
+  background-color: rgb(39, 39, 42);
+}
+
+.deleteButton {
+  background-color: rgb(239, 68, 68);
+  border: none;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.deleteButton:hover {
+  background-color: rgb(220, 38, 38);
+}
